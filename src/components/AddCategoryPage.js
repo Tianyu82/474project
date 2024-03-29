@@ -18,6 +18,7 @@ function AddCategoryPage ({closeAddCategoryPage}) {
         e.preventDefault();
         try {
             const response = await axios.post('https://ls43udyak5.execute-api.us-east-2.amazonaws.com/categories', formData);
+            
             console.log(response.data);
             setFormData({
                 categoryName: ''
