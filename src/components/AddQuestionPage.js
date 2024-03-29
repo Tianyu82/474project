@@ -39,7 +39,7 @@ function AddQuestionPage ({closePopup, categories}) {
                   categoryName: categories[0].categoryName,
                 });
             }
-            const response = await axios.post('https://ls43udyak5.execute-api.us-east-2.amazonaws.com/question', formData);
+            const response = await axios.post('https://mzdmk8p7m8.execute-api.us-east-2.amazonaws.com/question', formData);
             console.log(response.data);
             setFormData({
                 questionName: '',
