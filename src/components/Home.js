@@ -31,7 +31,7 @@ function Home() {
   function handleSubmit(e) {
     e.preventDefault()
     axios
-    .get('https://rgkqi6tzh3.execute-api.us-east-2.amazonaws.com/question' + categoryEl.current.value + '/' + amountEl.current.value)
+    .get('https://rgkqi6tzh3.execute-api.us-east-2.amazonaws.com/question/' + categoryEl.current.value + '/' + amountEl.current.value)
     .then(res => {
       setFlashcards(res.data.map((questionItem, index) => {
         const answer = decodeString(questionItem.answer)
