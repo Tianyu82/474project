@@ -17,7 +17,7 @@ function AddCategoryPage ({closeAddCategoryPage}) {
     const onCreateCategoryHandler = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/category', formData);
+            const response = await axios.post('https://qlmevm1ygc.execute-api.us-east-2.amazonaws.com/category', formData);
             console.log(response.data);
             setFormData({
                 category_name: ''

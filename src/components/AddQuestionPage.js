@@ -39,7 +39,7 @@ function AddQuestionPage ({closePopup, categories}) {
                   category_name: categories[0].category_name,
                 });
             }
-            const response = await axios.post('http://localhost:5000/question', formData);
+            const response = await axios.post('http://https://qlmevm1ygc.execute-api.us-east-2.amazonaws.com/question', formData);
             console.log(response.data);
             setFormData({
                 question: '',
